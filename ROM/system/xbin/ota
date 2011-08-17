@@ -19,4 +19,4 @@ then
   CMD='/system/xbin/cwmota'
 fi
 
-echo $CMD $@
+$CMD $@
