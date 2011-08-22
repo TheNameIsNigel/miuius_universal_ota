@@ -14,12 +14,11 @@
 
 if [ -e /sdcard/MIUI/ota.config.amonra ]
 then
-  CMD='/system/xbin/amonraota'
+  /system/xbin/amonraota $@ && echo reboot >> /cache/recovery/command
 elif [ -e /sdcard/MIUI/ota.config.twrp ]
 then
-  CMD='/system/xbin/twrpota'
+  /system/xbin/twrpota $@ && echo reboot >> /cache/recovery/command
 else
-  CMD='/system/xbin/cwmota'
+  /system/xbin/cwmota $@
 fi
 
-$CMD $@
