@@ -6,16 +6,16 @@
 #
 #     This script defaults to cwm recovery but can easily be changed
 #
+#     To make OTA's work on AmonRA you need to create a touchfile on the SD
+#     card in /sdcard/MIUI/ota.config.amonra
+#
 # Copyright (c) 2011 MIUI.us
 # Written by n_i_x
-
-CMD='/system/xbin/cwmota'
 
 if [ -e /sdcard/MIUI/ota.config.amonra ]
 then
   CMD='/system/xbin/amonraota'
-elif [ -e /sdcard/MIUI/ota.config.cwm ]
-then
+else
   CMD='/system/xbin/cwmota'
 fi
 
