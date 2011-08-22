@@ -4,6 +4,11 @@ or TeamWin Recovery Project.
 Since there is no way to accurately determine the currently installed recovery, this system requires touchfiles to
 work properly.
 
+To use:
+
+Copy the files in the ROM folder to their corresponding locations. Make sure your updater-script sets permissions
+on /system/xbin to 755.
+
 Users must create one of the following files on their SD Cards:
 
 For AmonRA recovery:
