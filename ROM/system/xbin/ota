@@ -15,6 +15,9 @@
 if [ -e /sdcard/MIUI/ota.config.amonra ]
 then
   CMD='/system/xbin/amonraota'
+elif [ -e /sdcard/MIUI/ota.config.twrp ]
+then
+  CMD='/system/xbin/twrpota'
 else
   CMD='/system/xbin/cwmota'
 fi
