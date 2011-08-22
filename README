@@ -1,1 +1,15 @@
-These files allow MIUI updater to flash OTA updates from either clockworkmod recovery or amonra recovery.
+These files allow MIUI updater to flash OTA updates from either ClockworkMod recovery, AmonRA recovery,
+or TeamWin Recovery Project.
+
+Since there is no way to accurately determine the currently installed recovery, this system requires touchfiles to
+work properly.
+
+Users must create one of the following files on their SD Cards:
+
+For AmonRA recovery:
+  /sdcard/MIUI/ota.config.amonra
+
+For TeamWin Recovery Project:
+  /sdcard/MIUI/ota.config.twrp
+
+For ClockworkMod Recovery simply make sure none of the above files exist!
